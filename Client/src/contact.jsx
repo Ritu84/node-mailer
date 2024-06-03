@@ -21,7 +21,7 @@ function Contact() {
       message
     };
     try {
-      const response = await axios.post('https://form-server-1-duby.onrender.com', dataToSend);
+      const response = await axios.post('http://localhost:5000', dataToSend);
       alert(response.data);
     } catch (error) {
       console.error(error);
